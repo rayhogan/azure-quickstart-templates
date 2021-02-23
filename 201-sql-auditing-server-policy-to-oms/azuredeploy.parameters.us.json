@@ -1,18 +1,21 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {    
+  "parameters": {
+    "sqlServerName": {
+      "value": "GEN-UNIQUE"
+    },
     "sqlAdministratorLogin": {
       "value": "GEN-UNIQUE"
     },
-    "sqlAdministratorPassword": {
+    "sqlAdministratorLoginPassword": {
       "value": "GEN-PASSWORD"
     },
-    "hostingPlanMVC": {
+    "omsWorkspaceName": {
       "value": "GEN-UNIQUE"
     },
-    "hostingPlanAdministration": {
-      "value": "GEN-UNIQUE"
+    "workspaceRegion": {
+      "value": "usgovvirginia"
     }
   }
 }
